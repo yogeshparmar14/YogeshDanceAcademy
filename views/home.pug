@@ -1,0 +1,49 @@
+extends base.pug
+
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection 
+          div  Welcome to the Yogesh's Dance academy 
+          div.small  Live learn Repeat Dance
+    
+    section#missionSection 
+          h2 our mission
+          div.card 
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png", alt="img")
+
+                div.card-content
+                    p This is best dance academy of universe
+          div.card 
+            h3 Dance the way you like 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png", alt="img")
+
+                div.card-content
+                    p This is best dance academy of universe
+
+          div.card 
+            h3 Expert teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png", alt="img")
+
+                div.card-content
+                    p This is best dance academy of universe
+    section#sponsorsSection 
+          h2 our sponsors
+          div#sponsors
+              img(src="/static/img/logo1.png", alt="sponsor img", class="spImage")
+              img(src="/static/img/logo2.png", alt="sponsor img", class="spImage")
+              img(src="/static/img/logo3.png", alt="sponsor img", class="spImage")
+              img(src="/static/img/logo4.png", alt="sponsor img", class="spImage")
